@@ -41,38 +41,38 @@ def negative_assert(name_kit):
 # 1. El número permitido de caracteres (1)
 
 def test_caracteres_1():
-    positive_assert("a")
+    positive_assert(data.caract_1)
 
 
 # 2. El número permitido de caracteres (511)
 
 def test_caracteres_511():
-    positive_assert("AbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdAbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabC")
+    positive_assert(data.caract_511)
 
 # 3. Número de caracteres (0)
 
 def test_caracteres_0():
-    negative_assert("")
+    negative_assert(data.caract_0)
 
 # 4. El número de caracteres es (512)
 
 def test_caracteres_512():
-    negative_assert("AbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdAbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcD")
+    negative_assert(data.caract_512)
 
 # 5. Se permiten caracteres especiales
 
 def test_caracteres_especiales():
-    positive_assert("№%@")
+    positive_assert(data.caract_especiales)
 
 # 6. Se permiten espacios
 
 def test_permiten_espacios():
-    positive_assert(" A Aaa ")
+    positive_assert(data.espacios)
 
 # 7. Se permiten números
 
 def test_permiten_numeros():
-    positive_assert("123")
+    positive_assert(data.numeros)
 
 # 8. Parámetro no se pasa en la solicitud
 
@@ -84,4 +84,4 @@ def test_parametro_no_se_pasa_en_la_solicitud():
 # 9 Parámetro diferente (número)
 
 def test_tipo_parametro_diferente():
-    negative_assert(123)
+    negative_assert(data.param_diferente)

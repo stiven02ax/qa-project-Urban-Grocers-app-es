@@ -1,5 +1,10 @@
 # Proyecto Urban Grocers
 
+Este proyecto consiste en un conjunto de pruebas automatizadas para verificar la 
+funcionalidad de la API de Urban Grocers, específicamente en la creación de usuarios y kits. 
+Las pruebas están desarrolladas en Python utilizando la biblioteca "pytest" y 
+cubren tanto casos positivos como negativos. 
+
 ## Estructura del Proyecto
 
 ```
@@ -35,4 +40,32 @@ Este proyecto valida los siguientes escenarios en la creación de kits:
 - Pytest
 - Requests
 - Git
+
+---
+
+## Instalación de la libreria
+
+Instala la libreria con el siguiente comando:
+
+bash
+
+pip install requests
+
+---
+
+## Cómo ejecutar las pruebas
+
+1. Clonar este repositorio.
+2. Asegurarse de tener pytest instalado.
+3. Ejecutar el siguiente comando en la raíz del proyecto:
+
+bash
+
+pytest ruta/del/proyecto
+
+---
+
+## Autor
+
+Frankin Estiven Suarez Minayo - Sprint 7
 
